@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Acessando Atributos #02</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class='conteudo exercicio'>
+    <div>
+        <label for="compras">Compras</label>
+        <ul id="compras" destino='escritório' data-urgencia="5"
+            data-blabla="opa">
+            
+            <li>Café</li>
+            <li>Água</li>
+            <li>Copo Descartável</li>
+        </ul>
+    </div>
+    <script>
+        // criando constante para armezenar lista
+        /*ieot mais logo
+        const lista = document.querySelector('div ul[destino="escritório"]')*/
+        const lista = document.querySelector('#compras')
+        console.log('Elemento "ul"...............')
+        console.log('childNodes', lista.childNodes)
+        console.log('destino', lista.id)
+
+        lista.setAttribute('destino', 'empresa')
+        lista.setAttribute('status', 'aberto')
+        lista.removeAttribute('destino')
+        console.log(lista.dataset.urgencia)
+
+        //cuidado
+        const label = document.querySelector('label')
+        //acessando atributo for
+        //console.log(label.for) 
+        console.log(label.htmlFor)
+
+    </script>
+</body>
+
+</html>
