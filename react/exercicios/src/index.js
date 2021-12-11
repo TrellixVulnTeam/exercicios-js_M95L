@@ -1,6 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const elemento = <h1>React</h1>
 
-ReactDOM.render(elemento, document.getElementById('root'))
+import Saudacao from './componentes/Saudacao'
+
+import BomDia from './componentes/BomDia'
+
+ReactDOM.render(
+    <div>
+        <Saudacao tipo="Bom dia" nome="João" />
+        
+    </div>
+, document.getElementById('root'))
+
