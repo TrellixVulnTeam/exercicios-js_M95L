@@ -1,0 +1,10 @@
+Na pasta React
+
+para criar o projeto exercicios:
+1º) npm i -g create-react-app
+2º) create-react-app exercicios
+
+
+criar o projeto calculadora com o seguinte comando:
+
+create-react-app calculadora (enter)
