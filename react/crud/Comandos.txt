@@ -26,3 +26,6 @@ add as dependências:
 
 entrar na pasta frontend (cd frontend) e executar o [npm i]
 rodar o npm start
+
+caso apresente erro de registerServiceWorker ou ENOENT, dentro da pasta crud/frontend/
+rodar o comando: npm install
