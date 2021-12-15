@@ -1,0 +1,56 @@
+dentro da pasta backend, rodar o comando: 
+npm init -y (vai crair o packge.json)
+
+definindo uma dependência
+npm i --save json-server@0.13.0 -E
+
+--------------------------------------------------
+backend
+dentro do packge.json (backend), retirar o script test
+e add o "start": "json-server --watch db.json --port 3001"
+
+após isso, rodar o npm start no terminal para "startar" o server
+
+irá aparecer a mensagem " Type s + enter at any time to create a snapshot of the database
+  Watching..."
+  ai vc vai no chrome e digita o host que foi dado 
+  "http://localhost:3001/users" e irá aparecer os usuários cadastrados
+  no db.json
+--------------------------------------------------
+FRONTEND
+para isso, foi aberto um novo terminal ao lado do que já estava aberto
+neste novo terminal, entrar na pasta reac/crud/ com o comando:
+cd react/crud/
+dentro de /crud
+executar o comando:
+create-react-app frontend
+
+caso solicita remoção global de algo já instalado, seguir conform código informado
+no terminal que neste momento é:  npm uninstall -g create-react-app
+
+Estava dando erro na execução do create-react-app. para isso, foi "rodado o comando:
+npm i -g create-react-app
+e após isso, agora sim, executar:
+create-react-app frontend (para criar a pasta frontend)
+quando terminar, irá aprecer assim:
+
+"(...)
+We suggest that you begin by typing:
+
+  cd frontend
+  npm start
+
+Happy hacking!"
+
+no arquivo package.json de frontend
+add as seguintes dependência:
+"axios": "0.18.0",
+"bootstrap": "4.1.1",
+"font-awesome": "4.7.0",
+"react-router": "4.2.0",
+"react-router-dom": "4.2.2",
+
+após isso, entrar na pasta frontend(cd frontend),
+salvar e rodar o "npm i" pra instalar as novas dependências
+
+agora já pode rodar o npm start pra "startar" o server
