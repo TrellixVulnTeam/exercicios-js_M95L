@@ -1,0 +1,6 @@
+entrar no terminal da pasta do projeto
+digitar:
+npx create-next-app enter
+vai perguntar qual o nome do projeto
+digitar:
+fundamentos
